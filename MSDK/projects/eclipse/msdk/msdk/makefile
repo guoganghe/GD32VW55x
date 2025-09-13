@@ -105,11 +105,11 @@ clean:
 	-@echo ' '
 
 pre-build:
-	-cmd /C "..\..\..\image_prebuild.bat riscv-nuclei-elf- D:/work/103/github/GD32VW55x/MSDK/projects/eclipse/msdk/../../../ "
+	-cmd /C "..\..\..\image_prebuild.bat riscv-nuclei-elf- D:/work/WIFI_GD32VW/Github_GD32VW55x/MSDK/projects/eclipse/msdk/../../../ "
 	-@echo ' '
 
 post-build:
-	-cmd /C "..\..\..\image_afterbuild.bat riscv-nuclei-elf-  ECDSA256 CERT D:\work\GD32EmbeddedBuilder_v1.5.2.30854\GD32EmbeddedBuilder\/../Tools/OpenOCD/xpack-openocd-0.11.0-3/bin D:/work/103/github/GD32VW55x/MSDK/projects/eclipse/msdk/../../../../ "" "
+	-cmd /C "..\..\..\image_afterbuild.bat riscv-nuclei-elf-  ECDSA256 CERT D:\work\GD32EmbeddedBuilder_v1.5.2.30854\GD32EmbeddedBuilder\/../Tools/OpenOCD/xpack-openocd-0.11.0-3/bin D:/work/WIFI_GD32VW/Github_GD32VW55x/MSDK/projects/eclipse/msdk/../../../../ "" "
 	-@echo ' '
 
 secondary-outputs: $(SECONDARY_FLASH_HEX) $(SECONDARY_FLASH_BIN) $(SECONDARY_LIST) $(SECONDARY_SIZE)

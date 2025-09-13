@@ -92,7 +92,7 @@ pre-build:
 	-@echo ' '
 
 post-build:
-	-cmd /C "..\..\mbl_afterbuild.bat  riscv-nuclei-elf- D:/work/103/github/GD32VW55x/MBL/project/eclipse/../../../  ECDSA256 CERT D:\work\GD32EmbeddedBuilder_v1.5.2.30854\GD32EmbeddedBuilder\/../Tools/OpenOCD/xpack-openocd-0.11.0-3/bin "00ffeeddccbbaa998877665544332211" "
+	-cmd /C "..\..\mbl_afterbuild.bat  riscv-nuclei-elf- D:/work/WIFI_GD32VW/Github_GD32VW55x/MBL/project/eclipse/../../../  ECDSA256 CERT D:\work\GD32EmbeddedBuilder_v1.5.2.30854\GD32EmbeddedBuilder\/../Tools/OpenOCD/xpack-openocd-0.11.0-3/bin "00ffeeddccbbaa998877665544332211" "
 	-@echo ' '
 
 secondary-outputs: $(SECONDARY_FLASH_HEX) $(SECONDARY_FLASH_BIN) $(SECONDARY_LIST) $(SECONDARY_SIZE)
