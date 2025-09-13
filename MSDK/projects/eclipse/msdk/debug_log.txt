@@ -1,0 +1,211 @@
+SEGGER J-Link GDB Server V8.34 Command Line Version
+
+JLinkARM.dll V8.34 (DLL compiled May 14 2025 16:57:20)
+
+Command line: -port 2331 -s -device GD32VW553HMQ7 -endian little -speed 4000 -timeout 5000 -if jtag
+-----GDB Server start settings-----
+GDBInit file:                  none
+GDB Server Listening port:     2331
+SWO raw output listening port: 2332
+Terminal I/O port:             2333
+Accept remote connection:      localhost only
+Generate logfile:              off
+Verify download:               off
+Init regs on start:            off
+Silent mode:                   off
+Single run mode:               on
+Target connection timeout:     5000 ms
+------J-Link related settings------
+J-Link Host interface:         USB
+J-Link script:                 none
+J-Link settings file:          none
+------Target related settings------
+Target device:                 GD32VW553HMQ7
+Target device parameters:      none
+Target interface:              JTAG
+Target interface speed:        4000kHz
+Target endian:                 little
+
+Connecting to J-Link...
+J-Link is connected.
+Firmware: J-Link Pro V4 V11 PLUS Mar compiled 12 2025 10:34:01
+Hardware: V11.00
+S/N: 250710109
+Feature(s): GDB, RDI, FlashBP, FlashDL, JFlash
+Checking target voltage...
+Target voltage: 3.28 V
+Listening on TCP/IP port 2331
+Connecting to target...
+
+J-Link found 2 JTAG devices, Total IRLen = 10
+JTAG ID: 0x10307A6D (RISC-V)
+Halting core...
+RISC-V RV32 detected. Using RV32 register set for communication with GDB
+Core implements double precision FPU
+Connected to target
+Waiting for GDB connection...Connected to 0000:0000:0000:0000:0000:0000:0000:0001
+GDB client (conn. 864) requested target.xml from GDB Server
+Reading common registers: Read register 'zero' (4 bytes) from hardware: 0x00000000
+Read register 'ra' (4 bytes) from hardware: 0x9AB80508
+Read register 'sp' (4 bytes) from hardware: 0xB03A0320
+Read register 'gp' (4 bytes) from hardware: 0x201C0020
+Read register 'tp' (4 bytes) from hardware: 0x00000000
+Read register 't0' (4 bytes) from hardware: 0xBEA00508
+Read register 't1' (4 bytes) from hardware: 0xE0FFFFFF
+Read register 't2' (4 bytes) from hardware: 0x00000000
+Read register 'fp' (4 bytes) from hardware: 0x00290020
+Read register 's1' (4 bytes) from hardware: 0x40180020
+Read register 'a0' (4 bytes) from hardware: 0xA0250020
+Read register 'a1' (4 bytes) from hardware: 0x00000000
+Read register 'a2' (4 bytes) from hardware: 0x45610100
+Read register 'a3' (4 bytes) from hardware: 0x00000000
+Read register 'a4' (4 bytes) from hardware: 0xD0280020
+Read register 'a5' (4 bytes) from hardware: 0x00000000
+Read register 'a6' (4 bytes) from hardware: 0x00000000
+Read register 'a7' (4 bytes) from hardware: 0x18000000
+Read register 's2' (4 bytes) from hardware: 0xA5A5A5A5
+Read register 's3' (4 bytes) from hardware: 0x04000000
+Read register 's4' (4 bytes) from hardware: 0xA5A5A5A5
+Read register 's5' (4 bytes) from hardware: 0xA5A5A5A5
+Read register 's6' (4 bytes) from hardware: 0xA5A5A5A5
+Read register 's7' (4 bytes) from hardware: 0xA5A5A5A5
+Read register 's8' (4 bytes) from hardware: 0xA5A5A5A5
+Read register 's9' (4 bytes) from hardware: 0xA5A5A5A5
+Read register 's10' (4 bytes) from hardware: 0xA5A5A5A5
+Read register 's11' (4 bytes) from hardware: 0xA5A5A5A5
+Read register 't3' (4 bytes) from hardware: 0x10370320
+Read register 't4' (4 bytes) from hardware: 0x01000000
+Read register 't5' (4 bytes) from hardware: 0xA5A5A5A5
+Read register 't6' (4 bytes) from hardware: 0x58270020
+Read register 'pc' (4 bytes) from hardware: 0x62B90508
+Received monitor command: speed 30
+Target interface speed set to 30 kHz
+Received monitor command: endian little
+Target endianess set to "little endian"
+Received monitor command: reset
+Resetting target
+Received monitor command: speed 500
+Target interface speed set to 500 kHz
+Received monitor command: flash download = 1
+Flash download enabled
+Received monitor command: reset 1
+Resetting target.
+Downloading 716 bytes @ address 0x0800A000
+Downloading 4248 bytes @ address 0x0800A2CC
+Downloading 16288 bytes @ address 0x0800B400
+Downloading 16144 bytes @ address 0x0800F3A0
+Downloading 16176 bytes @ address 0x080132B0
+Downloading 16272 bytes @ address 0x080171E0
+Downloading 16352 bytes @ address 0x0801B170
+Downloading 16352 bytes @ address 0x0801F150
+Downloading 16352 bytes @ address 0x08023130
+Downloading 16352 bytes @ address 0x08027110
+Downloading 16352 bytes @ address 0x0802B0F0
+Downloading 16336 bytes @ address 0x0802F0D0
+Downloading 16336 bytes @ address 0x080330A0
+Downloading 16272 bytes @ address 0x08037070
+Downloading 16320 bytes @ address 0x0803B000
+Downloading 16320 bytes @ address 0x0803EFC0
+Downloading 16208 bytes @ address 0x08042F80
+Downloading 16240 bytes @ address 0x08046ED0
+Downloading 16080 bytes @ address 0x0804AE40
+Downloading 16000 bytes @ address 0x0804ED10
+Downloading 16032 bytes @ address 0x08052B90
+Downloading 16032 bytes @ address 0x08056A30
+Downloading 15936 bytes @ address 0x0805A8D0
+Downloading 15968 bytes @ address 0x0805E710
+Downloading 15920 bytes @ address 0x08062570
+Downloading 16112 bytes @ address 0x080663A0
+Downloading 16032 bytes @ address 0x0806A290
+Downloading 15936 bytes @ address 0x0806E130
+Downloading 15984 bytes @ address 0x08071F70
+Downloading 16080 bytes @ address 0x08075DE0
+Downloading 16016 bytes @ address 0x08079CB0
+Downloading 16160 bytes @ address 0x0807DB40
+Downloading 16160 bytes @ address 0x08081A60
+Downloading 16112 bytes @ address 0x08085980
+Downloading 16112 bytes @ address 0x08089870
+Downloading 16032 bytes @ address 0x0808D760
+Downloading 15984 bytes @ address 0x08091600
+Downloading 15968 bytes @ address 0x08095470
+Downloading 15984 bytes @ address 0x080992D0
+Downloading 15920 bytes @ address 0x0809D140
+Downloading 16080 bytes @ address 0x080A0F70
+Downloading 16080 bytes @ address 0x080A4E40
+Downloading 15968 bytes @ address 0x080A8D10
+Downloading 15904 bytes @ address 0x080ACB70
+Downloading 15616 bytes @ address 0x080B0990
+Downloading 15904 bytes @ address 0x080B4690
+Downloading 15920 bytes @ address 0x080B84B0
+Downloading 15984 bytes @ address 0x080BC2E0
+Downloading 15888 bytes @ address 0x080C0150
+Downloading 15760 bytes @ address 0x080C3F60
+Downloading 15872 bytes @ address 0x080C7CF0
+Downloading 15744 bytes @ address 0x080CBAF0
+Downloading 15872 bytes @ address 0x080CF870
+Downloading 15984 bytes @ address 0x080D3670
+Downloading 16048 bytes @ address 0x080D74E0
+Downloading 15872 bytes @ address 0x080DB390
+Downloading 15920 bytes @ address 0x080DF190
+Downloading 15936 bytes @ address 0x080E2FC0
+Downloading 15984 bytes @ address 0x080E6E00
+Downloading 15840 bytes @ address 0x080EAC70
+Downloading 15936 bytes @ address 0x080EEA50
+Downloading 15984 bytes @ address 0x080F2890
+Downloading 15952 bytes @ address 0x080F6700
+Downloading 15888 bytes @ address 0x080FA550
+Downloading 15856 bytes @ address 0x080FE360
+Downloading 15760 bytes @ address 0x08102150
+Downloading 15984 bytes @ address 0x08105EE0
+Downloading 15984 bytes @ address 0x08109D50
+Downloading 15936 bytes @ address 0x0810DBC0
+Downloading 16128 bytes @ address 0x08111A00
+Downloading 16064 bytes @ address 0x08115900
+Downloading 12016 bytes @ address 0x081197C0
+Downloading 1296 bytes @ address 0x0811C6B0
+Writing register 'pc' = 0x0800A1D0
+Reading 64 bytes @ address 0x0804C180
+Read 4 bytes @ address 0x0804C18C (Data = 0x758110EF)
+Received monitor command: reset
+Resetting target
+Read 4 bytes @ address 0x0804C18C (Data = 0x758110EF)
+Setting breakpoint @ address 0x0804C18C, Kind = 4, Type = ARM, BPHandle = 0x0001
+Starting target CPU...
+...Breakpoint (set by 'GDB') reached @ address 0x0804C18C
+Reading common registers: Read register 'zero' (4 bytes) from hardware: 0x00000000
+Read register 'ra' (4 bytes) from hardware: 0xC4A20008
+Read register 'sp' (4 bytes) from hardware: 0xF07F0420
+Read register 'gp' (4 bytes) from hardware: 0x501C0020
+Read register 'tp' (4 bytes) from hardware: 0x00000000
+Read register 't0' (4 bytes) from hardware: 0x8CC10408
+Read register 't1' (4 bytes) from hardware: 0x08000000
+Read register 't2' (4 bytes) from hardware: 0xD0280033
+Read register 'fp' (4 bytes) from hardware: 0x60030020
+Read register 's1' (4 bytes) from hardware: 0x00A00008
+Read register 'a0' (4 bytes) from hardware: 0x00000000
+Read register 'a1' (4 bytes) from hardware: 0x00000000
+Read register 'a2' (4 bytes) from hardware: 0x00000000
+Read register 'a3' (4 bytes) from hardware: 0xCC250020
+Read register 'a4' (4 bytes) from hardware: 0x01000000
+Read register 'a5' (4 bytes) from hardware: 0x05000000
+Read register 'a6' (4 bytes) from hardware: 0x1F000000
+Read register 'a7' (4 bytes) from hardware: 0x00000000
+Read register 's2' (4 bytes) from hardware: 0x00000000
+Read register 's3' (4 bytes) from hardware: 0x00000000
+Read register 's4' (4 bytes) from hardware: 0x00000000
+Read register 's5' (4 bytes) from hardware: 0x00000000
+Read register 's6' (4 bytes) from hardware: 0x00000000
+Read register 's7' (4 bytes) from hardware: 0x00000000
+Read register 's8' (4 bytes) from hardware: 0x00000000
+Read register 's9' (4 bytes) from hardware: 0x00000000
+Read register 's10' (4 bytes) from hardware: 0x00000000
+Read register 's11' (4 bytes) from hardware: 0x00000000
+Read register 't3' (4 bytes) from hardware: 0x89470020
+Read register 't4' (4 bytes) from hardware: 0x09000000
+Read register 't5' (4 bytes) from hardware: 0xA86E00B2
+Read register 't6' (4 bytes) from hardware: 0x30480020
+Read register 'pc' (4 bytes) from hardware: 0x8CC10408
+Removing breakpoint @ address 0x0804C18C, Size = 4
+GDB closed TCP/IP connection (Socket 864)
+Restoring target state and closing J-Link connection...
+Shutting down...

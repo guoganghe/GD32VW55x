@@ -1,0 +1,8 @@
+# eclipse工程
+.metadata/
+/GD32VW55x/MSDK/projects/eclipse/msdk/msdk
+*.o
+*.d
+*.o.lst
+# usr代码私有
+usr/
